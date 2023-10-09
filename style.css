@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+:root{
+    --font-primary: 'Poppins', sans-serif;
+}
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do corpo da página */
+  body {
+    font-family: var(--font-primary);
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Estilo do cabeçalho */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo do container principal */
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilo das colunas */
+  .coluna {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Estilo dos cabeçalhos das colunas */
+  .coluna h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  /* Estilo da lista de tarefas */
+  .tarefas {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Estilo das tarefas individuais */
+  .tarefa {
+    background-color: #3d9bff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    color: #fff;
+    cursor: grab;
+    transition: 0.7s;
+  }
+
+  .tarefa:hover {
+    background-color: #3d9bff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px 0;
+    color: #fff;
+    cursor: grab;
+    transition: 0.7s;
+  }
+  
+  /* Estilo da tarefa enquanto é arrastada */
+  .tarefa-arrastando {
+    opacity: 0.7;
+  }
+  
+  /* Estilo do formulário de adição de tarefa */
+  #adicionar-tarefa {
+    margin-top: 20px;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    align-items: center;
+  }
+  
+  /* Estilo do botão de adicionar */
+  #adicionar-tarefa button {
+    background-color: #3d9bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 27px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 85%;
+    cursor: pointer;
+    transition: 0.7s;
+  }
+
+  #adicionar-tarefa button:hover {
+    background-color: #004277;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 27px;
+    font-weight: 600;
+    border-radius: 6px;
+    width: 100%;
+    cursor: pointer;
+    transition: 1s;
+  }
+
+  
+  /* Estilo do input de nova tarefa */
+
+
+  .input-container {
+    position: relative;
+    margin: 20px;
+  }
+  .input-field {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    background-color: transparent;
+  }
+  
+
+  .input-highlight {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #007bff;
+    transition: all 0.3s ease;
+  }

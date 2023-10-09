@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Victor Zanchetta Xisto - SENAI</title>
+    <title>Victor Zanchetta Xisto - Senai</title>
     
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <h1>Trello VzX</h1>
+    <h1>Trello | Victor Zanchetta</h1>
 
 <div class="card">
     <div class="coluna" id="fazer">
-        <h2>A fazer</h2>
+        <h2>A FAZER:</h2>
         <ul class="tarefas" id="tarefa-fazer"></ul>
     </div>
 
     <div class="coluna" id="feito">
-        <h2>Feito</h2>
+        <h2>FEITO:</h2>
         <ul class="tarefas" id="tarefa-feito"></ul>
     </div>
-
+    
     <form id="adicionar-tarefa">
-        <label for="nova-tarefa">Nova Tarefa: </label>
-        <input type="text" id="nova-tarefa" name="nova-tarefa">
-        <button type="submit">Adicionar</button>
+
+        <div class="input-container">
+            <input placeholder="Nova Tarefa:" class="input-field" type="text" name="nova-tarefa" id="nova-tarefa">
+            <label for="nova-tarefa" class="input-label"></label>
+            <span class="input-highlight"></span>
+          </div>
+        <!-- <label for="nova-tarefa">Nova Tarefa: </label>
+        <input type="text" id="nova-tarefa" name="nova-tarefa"> -->
+        <button type="submit">ADICIONAR</button>
     </form>
 </div>
-    <!-- script JS -->
+
     <script src="main.js"></script>
+
 </body>
 </html>
